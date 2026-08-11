@@ -81,12 +81,6 @@ When the transcript names a real entity (person, brand, tool):
 file. Rough mapping: UI/card motion → soft swoosh; stamps/strikethroughs →
 heavy thud; word-mount ticks → subtle randomized clicks/pops on stressed words.
 
-## 7. Pipeline
-```bash
-# 1. Parse transcript, fetch/clean any missing entity assets
-python3 scripts/asset_processor.py --transcript core_assets/transcript.json
+## 7. Best practices 
 
-# 2. Render
-npx remotion render src/index.ts StyledSample export/final_output.mp4 \
-  --fps=60 --width=1080 --height=1920
-```
+1. Never use emojie use animated icons and static file real logos from the internet and remov the bg and use them into the video.
